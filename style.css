@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 5px 20px;
+  border: 1px solid #b21065;
+  border-radius: 20px;
+  background-image: linear-gradient(
+      to bottom,
+      #fff9,
+      transparent 50% 90%,
+      #f5cbbc99
+    ),
+    /* top layer for bright coating effect */
+      repeat-linear-gradient(60deg, #bc058255 0 10px, transparent 10px 20px),
+    /* l This class creates a repetitive line effect */
+      linear-gradient(to bottom, #ef08a6, #ee6c8f); /* bottom layer as background color */
+  color: #fff;
+  font-family: monospace;
+  font-weight: old;
+  text-shadow: 0 1px 0 #efb7de;
+  box-shadow: 0 10px 0 #0005, 0 5px 0 #bd1360, 0 4px 0 7px #fff,
+    0 0 30px 10px #e260ae;
+  transition: 0.5s;
+}
+button:active {
+  /* l Change the 2nd parameter (different from the bottom to 0 
+    and moving the button down to the 5px side creates a real click effect) */
+  box-shadow: 0 0px 0 #0005, 0 0px 0 #bd1360, 0 0px 0 7px #fff,
+    0 0 30px 30px #e260ae;
+  transform: translateY(5px);
+}
